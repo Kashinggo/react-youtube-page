@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +24,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.columns {
+  width: 1000px;
+  margin: 0 auto;
+  /* 2-liner 实现分屏 */
+  display: grid;
+  grid-template-areas: "primary secondary";
+}
+
+.primary {
+  width: 700px;
+  background: #eee;
+  /* background-color: blue; */
+}
+
+.secondary {
+  width: 300px;
+  background: #999;
+  /* background-color: red; */
+}
+
+.video-player {
+  height: 400px;
+  background: #bbb;
 }
